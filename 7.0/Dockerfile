@@ -14,6 +14,7 @@ RUN set -eux; \
 	addgroup -g 1000 -S www-data; \
 	adduser -u 1000 -D -S -G www-data www-data ; \
 	sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories ; \
+	apk add --no-cache python2 make gcc g++ git ; \
 	apk add --no-cache \
 	ca-certificates \
     curl \
