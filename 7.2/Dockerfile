@@ -1,6 +1,6 @@
 FROM alpine:3.11 as nekoimi-phpfpm-parent
 
-LABEL maintainer="yangjinbo <yangjinbo@yoyohr.com>"
+LABEL maintainer="nekoimi <nekoimime@gmail.com>"
 
 # 时区
 ENV TZ=Asia/Shanghai
